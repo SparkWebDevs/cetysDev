@@ -1,0 +1,545 @@
+/*
+ *
+ *      MAIN STYLE SHEET
+ *
+ */
+
+
+/*==========================
+            INDEX
+===========================*/
+
+/*
+    1- GENERAL STYLES
+    2- NAVBAR AND FOOTER
+    3- LOGIN SCREEN - ADMINS
+    4- INBOX SCREEN
+ */
+
+
+/*===================================
+            GENERAL STYLES
+=====================================*/
+
+html,
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: #F2F2F2;
+}
+
+
+
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #F2F2F2;
+    padding-bottom:175px;
+}
+
+.main-content {
+    width: 100%;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+}
+
+.middle-content{
+    background: #d0d0d0;
+    width: 60%;
+}
+
+
+/*===================================
+            NAVBAR AND FOOTER
+=====================================*/
+/*HEADER*/
+.header-main{
+    background: #FDE03D;
+    border-bottom:3px inset #F4B827;
+}
+
+.header-brand img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.header-main span{
+    color: #000000;
+    margin-left: 15px;
+    vertical-align: middle;
+    font-size: 2.5vw;
+}
+
+/*NAV BAR*/
+
+.navbar-nav > li > a{
+    color: #000000;
+    font-weight: bold;
+    }
+    
+.navbar{
+    min-height:50px !important;
+    }
+
+#nav-main a:hover {
+    color: #D1A42B;
+    background: #FDE03D;
+}
+
+#nav-main li.active a {
+    font-weight: 700;
+    color: #997620;
+}
+
+#nav-main {
+    min-height:50px !important;
+    background: #F4B827;
+}
+
+#bootstrap-nav {
+    max-width: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*FOOTER*/
+
+.main-footer{
+    max-width: 100%;
+    width: 100%;
+    height: 175px;
+    background-color: #F4B827;
+    color: #000000;   
+    display: -webkit-box;   
+    display: -ms-flexbox;   
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.app-info{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin: 15px 0;  
+}
+
+.subscribe-footer{
+    margin: 15px 5px 5px 5px;
+}
+
+
+
+.footer-menu-links{
+    width: 20%;
+    margin: 10px 5px 5px 5px;
+    display: inline-block;
+}
+
+.menu-links-item a{
+    color: #000000;
+}
+
+.menu-links-item a:hover{
+    color: #997620;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/*===========================================
+            LOGIN SCREEN & ADMINS
+=============================================*/
+
+    .admin-login-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 35%;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .admin-login-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .admin-login-form label {
+        text-transform: uppercase;
+        text-align: left;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .admin-login-form input{
+        height: 30px;
+        font-size: 16px;
+        border-style: solid;
+        border-radius: 4px;
+        border-color: #cccccc;
+    }
+
+    .admin-login-container button {
+        width: 50%;
+        -ms-flex-item-align: center;
+        align-self: center;
+        border: none;
+        text-transform: uppercase;
+        background: #ffdd0c;
+        height: 35px;
+        font-size: 15px;
+        color: #262626;
+        font-weight: bold; 
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    .admin-login-container button:hover {
+        background: #393939;
+        color: #fff;
+    }
+    
+    .config-container{
+        background: #E9E9E9;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .fecha-config{
+        width: 30%;
+        padding: 8px;
+        border-left: 2px solid #F2f2f2;
+        border-right: 2px solid #F2f2f2;
+    }
+    
+    .fecha-config input{
+        width: 100%;
+        height: 30px;
+    }
+    
+    .fecha-config h2{
+        text-align: center;
+    }
+    
+    .fecha-config button{
+        width: 50%;
+        margin: 10px auto;
+        display: block;
+    }
+    
+/*===========================================
+                TOOLBARS
+=============================================*/
+    .toolbar-right {
+        width: 20%;
+        position: relative;
+        border-left: 1px solid #ffdd0c;
+        background: #FFFFFF;
+        font-family: sans-serif;
+    }
+    
+    .toolbar {
+        width: 20%;
+        border-right: 1px solid #ffdd0c;
+        font-family: sans-serif;
+        padding: 0 10px;
+    } 
+    
+    .container {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        width: 100%;
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    
+    .yellow-btn {
+        background: #ffdd0c;
+        border: none;
+        height: 35px;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: sans-serif;
+        cursor: pointer;
+        color: #262626;
+        border-radius: 2px;
+        margin: 5px 0;
+        min-width: 70px;
+    }
+    
+    .yellow-btn:hover {
+	    background-color: #262626;
+        color: white;
+    }
+    
+    .yellow-btn:focus {
+        border: 1px;
+    } 
+    
+    input[type="number"] {
+        display: block;
+        -moz-appearance: textfield;
+        border: 2px solid #bebebe;
+        border-radius: 5px;
+        height: 30px;
+        margin: 5px;
+        margin-left: 10px;  
+        font-size: 15px;
+        padding: 0 5px;
+        width: 90%;
+        
+    }
+    
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    select {
+        width: 60px;
+    }
+    
+/*===========================================
+            TABLA DE RESULTADOS
+=============================================*/
+.ticket-container{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.ticket-container tbody tr{
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+    margin: auto;
+}
+.ticket-container label {
+    display: block;
+}
+.ticket-container tbody td{
+    display: block;
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    margin: 5px;
+    background: #F4B827;
+}
+
+.ticket-container tbody{
+    width: 100%;
+}
+
+.ticket-container tbody td:hover {
+	background: #FDE03D;
+}
+
+.ticket-container thead{
+    width: 75px;
+    display: none;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+}
+
+.selection-options-cont{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.selection-opt-btn{
+    width: 170px;
+    margin: 5px auto;
+    height: 40px;
+    background: #F4B827;
+    font-weight: bold;
+}
+
+.selection-opt-btn:hover{
+    background: #FDE03D;
+}
+
+.selection-opt-btn span{
+    margin-left: 3px;
+}
+
+.tickets-table input{
+    width: 20px;
+    height: 20px;
+}
+/*  PAGINACION */
+.col-sm-7{
+    width:100%;
+}
+
+#tickets-table_paginate{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*===========================================
+                    CART
+=============================================*/
+
+
+.cart-footer{
+    border-top: 2px solid #F4B827;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    text-align: center;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.cart-header{
+    border-bottom: 2px solid #F4B827;
+    padding: 5px 5px;
+    position: absolute;
+    top: 0;
+    height: 70px;
+    text-align: center;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.cart-header h3{
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.cart-info{
+    text-align: left;
+}
+
+.cart-info span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-footer button{
+    background: #F4B827;
+    font-weight: bold;
+}
+
+.items-list-cont{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 85px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: #FFFFFF;
+    width: 100%;
+    
+}
+
+.item-desc{
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+}
+
+.item-img-cont{
+    width: 30%;
+}
+
+.item-img{
+    width: 100%;
+}
+
+.ticket-desc-cont{
+    width: 100%;
+    display: flex;
+}
+
+.item-number{
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    width: 70%;
+}
+
+.item-price{
+    display: block;
+    font-size: 16px;
+    right: 0px;
+    width: 30%;
+    text-align: right;
+}
+
+.item-details-cont{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.item-secondary-details{
+    display: flex;
+    width: 100%;
+}
+
+.item-secondary-details span{
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
+}
+
+.item-secondary-details button{
+    width: 45px;
+    height: 30px;
+}
+
+
