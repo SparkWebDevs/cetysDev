@@ -67,6 +67,7 @@ $(document).ready(function(){
                 break;
             case 5:
                 hasDigits(number);
+                break
             default:
                 console.log('error');
                 break;
@@ -445,7 +446,7 @@ function getDateWithOption(opt){
 function printCartList(){
     var cartHTML="";
     for(var x=0; x<ticketsList.length; x++){
-        cartHTML += "<div class='item-desc' class='"+ticketsList[x].IdTicket+"'>"+
+        cartHTML += "<div class='item-desc "+ticketsList[x].IdTicket+"'>"+
 		"<div class='item-img-cont'>"+
 			"<img class='item-img' src='img/ticket.png'/>"+
 		"</div>"+

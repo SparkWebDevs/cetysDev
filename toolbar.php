@@ -5,7 +5,7 @@
         <input type="radio" name="section" value="2">Inicia con<br>
         <input type="radio" name="section" value="3">Termina con<br>
         <input type="radio" name="section" value="4">Suma de un digito<br>
-        <input type="radio" name="section" value="5">Contiene digitos<br>
+        <input type="radio" name="section" value="5">Que contenta los digitos<br>
         <input type="radio" name="section" value="6"> Option 6 <br>
         <button class="yellow-btn">Encuentra tu boleto</button>
     </form>
