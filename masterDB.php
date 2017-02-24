@@ -89,21 +89,18 @@
 		$ticket = $tickedId;
 		$queryError = false;
         try{
-            for($x=0 ; $x < count($ticketsList); $x++){ //loop through the tickets list
-                $reserveTicketsQuery = "UPDATE Tickets SET IdStatus = ?, ReservedLimit = ? WHERE IdTicket = ?;";
-                $params = array(1,NULL,$ticket);
-                $dataset = sqlsrv_query($conn, $reserveTicketsQuery, $params);
-                if(sqlsrv_rows_affected($dataset) == FALSE){
-                    $queryError = true;
+            $reserveTicketsQuery = "UPDATE Tickets SET IdStatus = ?, ReservedLimit = ? WHERE IdTicket = ?;";
+            $params = array(1,NULL,$ticket);
+            $dataset = sqlsrv_query($conn, $reserveTicketsQuery, $params);
+            if(sqlsrv_rows_affected($dataset) == FALSE){
+                $queryError = true;
+                if($queryError){
+                    echo "no";
+                }else{
+                    echo "yes";
                 }
             }
-		
-            if($queryError){
-                echo "no";
-            }else{
-                echo "yes";
-            }
-
+            
         }catch (Exception $err) {
             echo "no";  
         }
