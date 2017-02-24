@@ -89,6 +89,7 @@
 		$ticket = $tickedId;
 		$queryError = false;
         try{
+            echo "removeReservedStatus ticketId = " + $ticketId;
             $reserveTicketsQuery = "UPDATE Tickets SET IdStatus = ?, ReservedLimit = ? WHERE IdTicket = ?;";
             $params = array(1,NULL,$ticket);
             $dataset = sqlsrv_query($conn, $reserveTicketsQuery, $params);
