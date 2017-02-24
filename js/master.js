@@ -170,17 +170,6 @@ function sumOfDigit(number) {
     startWith(sum); 
     
 }
-   
-function ascendingOrder() {
-    
-    var tickets = dbTickets;
-    tickets.sort(function (a, b) {
-        return a.TicketNumber - b.TicketNumber;
-    });
-    
-    buildTicketsTable(50, tickets);   
-        
-}
 
 function hasDigits(num) {
     var tickets = dbTickets;
@@ -200,8 +189,20 @@ function hasDigits(num) {
         }
     }
     
-    return selectedNumbers;
+    buildTicketsTable(50, selectedNumbers);
 }
+   
+function ascendingOrder() {
+    
+    var tickets = dbTickets;
+    tickets.sort(function (a, b) {
+        return a.TicketNumber - b.TicketNumber;
+    });
+    
+    buildTicketsTable(50, tickets);   
+        
+}
+
 
 function addTableFeatures() {
         $('#tickets-table').dataTable({
