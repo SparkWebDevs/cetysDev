@@ -472,8 +472,8 @@ function printCartList(){
 function removeItemFromCart(ticketId) {
     console.log('ticketID = ' + ticketId);
     var ticket =  document.getElementsByClassName(ticketId);
-    removeReservedTicketStatus(ticketId);
     $(ticket).remove();
+    removeReservedTicketStatus(ticketId);
 }
 
 
