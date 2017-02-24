@@ -86,11 +86,10 @@
 
     function removeReservedStatus($ticketId){
 		global $conn;
-		$ticket = $tickedId;
 		$queryError = false;
         try{
             $reserveTicketsQuery = "UPDATE Tickets SET IdStatus = ?, ReservedLimit = ? WHERE IdTicket = ?;";
-            $params = array(1,NULL,$ticket);
+            $params = array(1,NULL,$ticketId);
             $dataset = sqlsrv_query($conn, $reserveTicketsQuery, $params);
             if(sqlsrv_rows_affected($dataset) == FALSE){
                 $queryError = true;
@@ -100,7 +99,6 @@
             }
             
         }catch (Exception $err) {
-            echo "catching exception";
             echo "no";
         }
     }

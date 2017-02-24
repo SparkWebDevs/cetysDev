@@ -118,6 +118,8 @@ function reserveTicketsForPurchase(){//Reservar los tickets para no ser visibles
 
 
 function removeReservedTicketStatus(ticketId) {
+    console.log('enter removeReservedStatus');
+    console.log(ticketId);
     $.ajax({
         type: "POST",
         url: 'masterInterface.php',
