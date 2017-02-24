@@ -94,17 +94,14 @@
             $dataset = sqlsrv_query($conn, $reserveTicketsQuery, $params);
             if(sqlsrv_rows_affected($dataset) == FALSE){
                 $queryError = true;
-            }
-            
-       
-            if($queryError){
                 echo "no";
-            }else{
+            } else{
                 echo "yes";
             }
             
         }catch (Exception $err) {
-            echo "no";  
+            echo "catching exception";
+            echo "no";
         }
     }
     
